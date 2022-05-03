@@ -20,8 +20,8 @@ func Min[T Number](first T, second T) T {
 	}
 }
 func TestMin(t *testing.T) {
-	assert.Equal(t, int(100), Min[int](100, 200))
-	assert.Equal(t, int64(100), Min[int64](100, 200))
-	assert.Equal(t, float64(100.0), Min[float64](100.0, 200.0))
-	assert.Equal(t, Age(100), Min[Age](Age(100), Age(200)))
+	assert.Equal(t, int(100), Min(100, 200))
+	assert.Equal(t, int64(100), Min(int64(100), int64(200)))
+	assert.Equal(t, float64(100.0), Min(100.0, 200.0))
+	assert.Equal(t, Age(100), Min(Age(100), Age(200)))
 }
